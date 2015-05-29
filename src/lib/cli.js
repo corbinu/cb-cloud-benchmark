@@ -1,16 +1,16 @@
+import { install as installSourceMaps } from "source-map-support";
+installSourceMaps();
+
 import _ from "lodash";
 import yargs from "yargs";
 import del from "del";
 import path from "path";
 import ProgressBar from "progress";
-import { install } from "source-map-support";
 
 import generate from "./generate";
 import Progress from "./progress";
 import setup from "./setup";
 import benchmark from "./benchmark";
-
-install();
 
 class ProgressProgressBar {
 
